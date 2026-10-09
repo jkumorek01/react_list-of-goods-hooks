@@ -1,4 +1,4 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import 'bulma/css/bulma.css';
 import './App.scss';
 
@@ -16,6 +16,24 @@ export const goodsFromServer = [
 ];
 
 export const App: React.FC = () => {
+  // const sortByAlpha = () => {
+  //   return goodsFromServer.sort((a, b) => a.localeCompare(b));
+  // };
+
+  // const sortByLength = () => {
+  //   return goodsFromServer.sort((a, b) => a.length - b.length);
+  // };
+
+  // const sortByLength = () => {
+  //   return goodsFromServer.sort((a, b) => a.length - b.length);
+  // };
+
+  // const sortByLength = () => {
+  //   return goodsFromServer.sort((a, b) => a.length - b.length);
+  // };
+
+  // const [value, setValue] = useState();
+
   return (
     <div className="section content">
       <div className="buttons">
@@ -37,14 +55,9 @@ export const App: React.FC = () => {
       </div>
 
       <ul>
-        <ul>
-          <li data-cy="Good">Dumplings</li>
-          <li data-cy="Good">Carrot</li>
-          <li data-cy="Good">Eggs</li>
-          <li data-cy="Good">Ice cream</li>
-          <li data-cy="Good">Apple</li>
-          <li data-cy="Good">...</li>
-        </ul>
+        {/* <ul>
+          {}
+        </ul> */}
       </ul>
     </div>
   );
