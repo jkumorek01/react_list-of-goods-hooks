@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import 'bulma/css/bulma.css';
 import './App.scss';
@@ -70,13 +69,15 @@ export const App: React.FC = () => {
           Reverse
         </button>
 
-        <button
-          type="button"
-          className="button is-danger is-light"
-          onClick={reset}
-        >
-          Reset
-        </button>
+        {(value !== SortType.NONE || isReversed) && (
+          <button
+            type="button"
+            className="button is-danger is-light"
+            onClick={reset}
+          >
+            Reset
+          </button>
+        )}
       </div>
 
       <ul>
