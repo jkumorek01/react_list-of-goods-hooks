@@ -57,7 +57,9 @@ export const App: React.FC = () => {
 
         <button
           type="button"
-          className="button is-success is-light"
+          className={`button is-success ${
+            value === SortType.LENGTH ? '' : 'is-light'
+          }`}
           onClick={() => setArray(SortType.LENGTH)}
         >
           Sort by length
