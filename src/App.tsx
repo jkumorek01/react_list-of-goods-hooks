@@ -47,7 +47,9 @@ export const App: React.FC = () => {
       <div className="buttons">
         <button
           type="button"
-          className="button is-info is-light"
+          className={`button is-info ${
+            value === SortType.ALPHABET ? '' : 'is-light'
+          }`}
           onClick={() => setArray(SortType.ALPHABET)}
         >
           Sort alphabetically
